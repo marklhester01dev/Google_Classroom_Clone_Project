@@ -1,0 +1,65 @@
+nav{
+  width: 17rem;
+  background-color:rgb(252, 251, 255);
+  padding: .50rem .75rem .75rem .75rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 4.35rem;
+}
+
+nav section{
+  display: flex;
+  flex-direction: column;
+}
+
+nav section div{
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+}
+
+nav section div img{
+  width: 1.4rem;
+  margin-right: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.home, .calendar, .enrolled, .archive, .settings{
+  margin: 0;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-family: "Montserrat", "Sansation", Arial;
+  font-size: 0.85rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+}
+
+.enrolled{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.enrolled span{
+  margin-right: 3.3rem;
+  font-weight: 600;
+}
+
+.arrow{
+  width: 1.2rem;
+  margin-left: 3.2rem;
+}
+
+.archive img{
+    width: 1.3rem;
+}
+
+.home:hover, .calendar:hover, .enrolled:hover, .archive:hover, .settings:hover{
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.134);
+}
+
+.home:active, .calendar:active, .enrolled:active, .archive:active, .settings:active{
+  background-color: rgb(168, 207, 243);
+}

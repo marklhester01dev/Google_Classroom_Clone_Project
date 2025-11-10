@@ -1,0 +1,76 @@
+.menu-holder, .plus-holder, .grid-holder, .profile-holder, .clipboard-holder, .folder-holder, .options-holder{
+  position: relative;
+}
+
+.clipboard-holder{
+  display: flex;
+}
+
+.menu-holder:hover .tooltip, .plus-holder:hover .tooltip-plus, .grid-holder:hover .tooltip-grid, .profile-holder:hover .tooltip-profile, .clipboard-holder:hover .tooltip-clipboard, .folder-holder:hover .tooltip-folder, .options-holder:hover .tooltip-options{
+  opacity: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.tooltip, .tooltip-plus, .tooltip-grid, .tooltip-profile, .tooltip-clipboard, .tooltip-folder, .tooltip-options {
+  z-index: 99;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.25rem 0.45rem 0.25rem 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: "Montserrat", "Roboto", "Sansation";
+  background-color: rgb(64, 64, 64);
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.50s;
+  pointer-events: none; /* Makes the tooltip untouched if we are hovering over the actual tooltip*/
+}
+
+.tooltip, .tooltip-plus, .tooltip-profile{
+  bottom: -2rem;
+}
+
+.tooltip{
+  left: -0.5rem;
+}
+
+.tooltip-plus{
+  left: -3.5rem;
+}
+
+.tooltip-grid{
+  bottom: -2.1rem;
+  left: -1.5rem;
+}
+
+.tooltip-profile{
+  text-align: start;
+  bottom: -3.75rem;
+  left: -10rem;
+}
+
+.tooltip-profile div:nth-child(2), .tooltip-profile div:nth-child(3){
+  color: rgb(172, 172, 172);
+}
+
+.tooltip-clipboard, .tooltip-folder{
+  text-align: start;
+  white-space: wrap;
+  top: -4.3rem;
+  width: 12.5rem;
+}
+.tooltip-clipboard{
+  height: 3.5rem;
+  left: -5rem;
+}
+
+.tooltip-folder{
+  left: -5.1rem;
+}
+
+.tooltip-options{
+  top: -2.4rem;
+  left: -1.6rem;
+}

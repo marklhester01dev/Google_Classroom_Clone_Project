@@ -1,0 +1,89 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:rgb(252, 251, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.left-section, .right-section{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.left-section span{
+  vertical-align: top;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  font-family: "Montserrat", "Sansation", Arial; 
+}
+
+.left-section span:hover{
+  color: rgb(32, 65, 211);
+  text-decoration: underline;
+}
+
+.left-section span:active{
+  color: rgb(32, 65, 211);
+  text-decoration: underline;
+}
+
+.menu, .google-classroom, span:hover, .plus, .profile, .dot{
+  cursor: pointer;
+}
+
+.google-classroom{
+  margin-left: 0.3rem;
+  white-space: nowrap;
+}
+
+.left-section{
+  margin-left: 1.4rem;
+}
+
+.right-section{
+  margin-right: 1.3rem;
+  justify-content: end;
+}
+
+img{
+  width: 1.7rem;
+}
+
+.menu{
+  width: 1.6rem;
+  margin-right: 0.6rem;
+}
+
+.plus{
+  background-color: transparent;
+}
+
+.right-section .dot{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.right-section .profile{
+  border-radius: 50%;
+  width: 2.1rem;
+}
+
+.right-section .dot{
+  width: 1.5rem;
+}
